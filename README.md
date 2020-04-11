@@ -12,7 +12,7 @@ For update DNS records of Onamae.com.
                 -e DOMAIN=yourdomain
                 -e SUBDOMAIN=yourhost
                 -e SUBDOMAIN2=otherhost
-                -d 
+                -d kunikada/onamae-ddns-client
 
 ENVIRONMENT VARIABLES
 
