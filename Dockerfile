@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add -U openssl
+RUN apk add --no-cache openssl
 
 WORKDIR /root
 
