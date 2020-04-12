@@ -1,20 +1,25 @@
 # Onamae DDNS client
 
-# What is this?
+## What is this?
 
 For update DNS records of Onamae.com.
 
-# Usage
+## Usage
 
     sudo docker run -it \
-                -e USERID=yourid
-                -e PASSWORD=yourpassword
-                -e DOMAIN=yourdomain
-                -e SUBDOMAIN=yourhost
-                -e SUBDOMAIN2=otherhost
+                -e USERID=yourid \
+                -e PASSWORD=yourpassword \
+                -e DOMAIN=yourdomain \
+                -e SUBDOMAIN=yourhost \
+                -e SUBDOMAIN2=otherhost \
+                --health-interval=5m \
                 -d kunikada/onamae-ddns-client
 
-ENVIRONMENT VARIABLES
+### INTERVAL
+
+Option `--health-interval` (default 5m)
+
+### ENVIRONMENT VARIABLES
 
  * USERID : Login ID
  * PASSWORD : Login password
