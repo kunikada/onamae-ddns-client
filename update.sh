@@ -22,8 +22,11 @@ function request() {
 /^DOMAIN/ { domain = $2 }
 /^SUBDOMAIN/ { subdomain[NR] = $2 }
 END {
-  if (userid == "" || password == "" || domain == "" || length(subdomain) == 0) {
+  if (userid == "" || password == "" || domain == "") {
     exit 1
+  }
+  if (length(subdomain) == 0) {
+    subdomain[0] = ""
   }
   print "LOGIN"
   print "USERID:" userid

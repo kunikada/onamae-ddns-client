@@ -1,7 +1,5 @@
 # Onamae DDNS client
 
-## What is this?
-
 For update DNS records of Onamae.com.
 
 ## Usage
@@ -25,3 +23,4 @@ Option `--health-interval` (default 5m)
  * PASSWORD : Login password
  * DOMAIN : Onamae.com domain name
  * SUBDOMAIN : Onamae.com host names (SUBDOMAIN2, SUBDOMAIN3...)
+ ** Optional (Default blank)
